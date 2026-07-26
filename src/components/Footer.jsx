@@ -1,7 +1,14 @@
-import { motion } from 'framer-motion'
+﻿import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { FaInstagram, FaFacebookF, FaLinkedinIn } from 'react-icons/fa'
 
 export default function Footer() {
+  const socials = [
+    { label: 'Instagram', href: 'https://www.instagram.com/millersgrouptrackfoundation?igsh=MWdzZ25ibjltdGF3eA==', Icon: FaInstagram },
+    { label: 'Facebook', href: 'https://www.fb.com/l/6lp1kJRRR', Icon: FaFacebookF },
+    { label: 'LinkedIn', href: 'https://linkedin.com', Icon: FaLinkedinIn },
+  ]
+
   return (
     <footer className="bg-[#0D2318] py-16 px-8 md:px-20">
       <div className="max-w-6xl mx-auto">
@@ -38,7 +45,7 @@ export default function Footer() {
                 ['Join Now', '#join'],
               ].map(([label, href]) => (
                 <li key={label}>
-                  <a
+                  
                     href={href}
                     className="text-[#F9F7F3]/50 text-sm hover:text-[#E76F51] transition-colors"
                   >
@@ -65,7 +72,7 @@ export default function Footer() {
             </p>
             <ul className="space-y-3 text-[#F9F7F3]/50 text-sm">
               <li>
-                <a
+                
                   href="mailto:millersgrouptrackfoundation@gmail.com"
                   className="hover:text-[#E76F51] transition-colors break-all"
                 >
@@ -73,7 +80,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
+                
                   href="https://wa.me/917354687210"
                   className="hover:text-[#25D366] transition-colors"
                 >
@@ -87,21 +94,18 @@ export default function Footer() {
 
             {/* Social icons */}
             <div className="flex gap-4 mt-6">
-              {[
-                { label: 'Instagram', href: 'https://www.instagram.com/millersgrouptrackfoundation?igsh=MWdzZ25ibjltdGF3eA==', icon: '📸' },
-                { label: 'Facebook', href: 'https://www.fb.com/l/6lp1kJRRR', icon: '📘' },
-                { label: 'LinkedIn', href: 'https://linkedin.com', icon: '💼' },
-              ].map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
+              {socials.map(({ label, href, Icon }) => (
+                
+                  key={label}
+                  href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-[#1A3B2E] flex items-center 
-                             justify-center text-sm hover:bg-[#E76F51] transition-all duration-300"
-                  aria-label={s.label}
+                  aria-label={label}
+                  className="w-10 h-10 rounded-full bg-[#1A3B2E] flex items-center
+                             justify-center text-[#F9F7F3] hover:bg-[#E76F51] hover:text-[#F9F7F3]
+                             transition-all duration-300"
                 >
-                  {s.icon}
+                  <Icon size={18} />
                 </a>
               ))}
             </div>
