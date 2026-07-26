@@ -12,9 +12,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#0D2318] py-16 px-8 md:px-20">
       <div className="max-w-6xl mx-auto">
-        {/* Top row */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-[#F9F7F3]/10">
-          {/* Brand */}
           <div>
             <p
               className="text-2xl font-bold text-[#F9F7F3] mb-3"
@@ -31,7 +29,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Links */}
           <div>
             <p className="text-[#F9F7F3]/30 text-xs tracking-widest uppercase font-semibold mb-6">
               Quick Links
@@ -53,19 +50,17 @@ export default function Footer() {
                   </a>
                 </li>
               ))}
-              {/* Our Journey — internal link to the archive page */}
               <li>
                 <Link
                   to="/our-journey"
                   className="text-[#F9F7F3]/50 text-sm hover:text-[#E76F51] transition-colors flex items-center gap-1"
                 >
-                  📖 Our Journey
+                  Our Journey
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
             <p className="text-[#F9F7F3]/30 text-xs tracking-widest uppercase font-semibold mb-6">
               Get In Touch
@@ -92,7 +87,6 @@ export default function Footer() {
               </li>
             </ul>
 
-            {/* Social icons */}
             <div className="flex gap-4 mt-6">
               {socials.map(({ label, href, Icon }) => (
                 
@@ -112,7 +106,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom row */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 gap-4">
           <p className="text-[#F9F7F3]/20 text-xs">
             © 2026 Miller's Group Track Foundation. All rights reserved.
