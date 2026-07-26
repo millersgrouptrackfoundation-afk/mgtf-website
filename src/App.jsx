@@ -1,16 +1,14 @@
-import { Routes, Route } from 'react-router-dom'
+﻿import { Routes, Route } from 'react-router-dom'
 import Hero from './components/Hero'
 import MissionVision from './components/MissionVision'
 import Models from './components/Models'
 import Athlete from './components/Athlete'
 import ImpactNumbers from './components/ImpactNumbers'
 import Team from './components/Team'
-import Flywheel from './components/Flywheel'
 import FoundingPatrons from './components/FoundingPatrons'
 import JoinForm from './components/JoinForm'
 import Footer from './components/Footer'
 import OurJourney from './components/OurJourney'
-
 function HomePage() {
   return (
     <main className="bg-[#0D2318] antialiased selection:bg-[#E76F51] selection:text-[#F9F7F3]">
@@ -20,14 +18,12 @@ function HomePage() {
       <Athlete />
       <ImpactNumbers />
       <Team />
-      <Flywheel />
       <FoundingPatrons />
       <JoinForm />
       <Footer />
     </main>
   )
 }
-
 export default function App() {
   return (
     <Routes>
