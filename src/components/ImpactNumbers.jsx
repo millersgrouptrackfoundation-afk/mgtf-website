@@ -47,7 +47,7 @@ export default function ImpactNumbers() {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   const stats = [
-    { end: 1, suffix: '', label: 'Athlete Sponsored', sublabel: 'Maneesha — Athlete #001' },
+    { end: 2, suffix: '', label: 'Athletes Sponsored', sublabel: 'Maneesha & Lajo Saroj' },
     { end: 2, suffix: '+', label: 'Schools Targeted', sublabel: 'KhelSakha Pipeline' },
     { end: 83, suffix: '+', label: 'Coach Network', sublabel: 'Certified coaches scouting talent across MP' },
   ]
@@ -83,6 +83,7 @@ export default function ImpactNumbers() {
       >
         <p className="text-[#F9F7F3]/30 text-xs tracking-widest uppercase">Every number is a real person. Every rupee is tracked.</p>
         <p className="text-[#E76F51] text-xs italic">Athlete #001 — Maneesha — competed at Indian Athletics Series 12, Surat. 3000m Steeplechase. 11:43.51.</p>
+        <p className="text-[#E76F51] text-xs italic">Athlete #002 — Lajo Saroj — competed at the 24th National Junior U-20 Federation Athletics Competition 2026. 5000m — 17:17.09.</p>
       </motion.div>
     </section>
   )
