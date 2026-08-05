@@ -3,7 +3,8 @@ import { useInView } from "framer-motion"
 import { useRef } from "react"
 
 const FOUNDING_MEMBERS = [
-  { name: "Sheersh Gaur", photo: "/sheersh-gaur.jpg" }
+  { name: "Sheersh Gaur", photo: "/sheersh-gaur.jpg" },
+  { name: "Chandan Somani", photo: "/Chandan somani.jpeg" }
 ]
 const TOTAL_SLOTS = 30
 
