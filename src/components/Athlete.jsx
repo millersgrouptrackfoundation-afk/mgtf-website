@@ -37,7 +37,7 @@ const athletes = [
   {
     id: '002',
     name: 'Lajo Saroj',
-    photos: ['/Lajo saroj.jpeg'],
+    photos: ['/lajo-1.jpg', '/lajo-2.jpg', '/lajo-3.jpg'],
     stats: [
       { value: '5000m', label: 'Primary Event' },
       { value: '10,000m', label: 'Secondary Event' },
